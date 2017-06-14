@@ -1,9 +1,17 @@
+/*
+    Esse seletor atinge todos os elementos do tipo 'p'
+    da página.
+*/
 p{
     font-size: 20px;
     text-align: center;
     font-weight: bold;
 }
 
+/*
+    Esse seletor atinge todos os elementos da página que possuam a classe
+    'paragrafo-verde'
+*/
 .paragrafo-verde{
     color: #adf442;
     background-color: yellow;
@@ -14,6 +22,13 @@ p{
 }
 
 .paragrafo-sombra{
+    /*
+        Propriedade sombra de texto:
+        1a posição: deslocamento horizontal
+        2a posição: deslocamento vertical
+        3a posição: dispersão da sombra
+        4a posição: cor da sombra
+    */
     text-shadow: 0 0 15px #000;
 }
 
@@ -40,18 +55,37 @@ p{
 .caixa{
     border: 2px solid #e842f4;
     border-radius: 50px;
+
+    /* funciona de forma similar à propriedade text-shadow */
     box-shadow: 5px 10px 1px black;
 }
 
+/*
+    As próximas classes foram usadas para posicionar um elemento de forma
+    absoluta dentro de outro elemento na página.
+*/
+
+/* Esse é o elemento pai */
 .container{
     width: 300px;
     height: 300px;
     background-color: orange;
+    /* É fundamental que o elemento pai tenha a propriedade position:relative */
     position: relative;
+
+    /*
+        Essa propriedade serve para centralizar o elemento horizontalmente,
+        porém ela só funciona para elementos que tenha uma largura
+        (width) definida.
+    */
     margin: auto;
 }
 
 .bloco{
+    /*
+        A posição 'absolute' faz com que o elemento 'flutue' dentro do elemento pai,
+        ignorando a posição dos demais elementos.
+     */
     position: absolute;
     width: 50px;
     height: 50px;
