@@ -1,16 +1,21 @@
+/**
+    O flexbox é uma conjunto de propriedades de CSS que permitem o posicionamento
+    de diversos elementos em uma linha ou coluna e ajuda a criar site responsivos.
+*/
+
 body{
     margin: 0;
 }
 
+/* A propriedade display:flex é sempre aplicada no elemento pai */
 .container{
     display: flex;
 }
 
-.container-2{
-    display: flex;
-    flex-wrap: wrap;
-}
-
+/*
+    Caso a largura dos elementos filhos ultrapasse o tamanho disponível,
+    eles serão redimensionados automaticamente.
+ */
 .quadrado{
     height: 300px;
     width: 33%;
@@ -27,4 +32,13 @@ body{
 
 .quadrado.verde{
     background-color: green;
+}
+
+/*
+    Se utilizarmos a propriedade flex-wrap:wrap, os elementos que ultrapassem
+    o espaço disponível no elemento pai serão jogados para uma linha abaixo.
+*/
+.container-2{
+    display: flex;
+    flex-wrap: wrap;
 }

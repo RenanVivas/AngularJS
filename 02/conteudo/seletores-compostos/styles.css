@@ -1,0 +1,58 @@
+button{
+    background-color: red;
+    border:0;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    height: 30px;
+}
+
+/*
+    Quando usamos dois termos com um ESPAÇO no meio, estamos selecionado os
+    elementos filhos do primeiro elemento atingido por essa regra.
+    Nesse caso, estamos selecionando todos os elementos do tipo 'img' que estão
+    dentro de qualquer elemento que tenha a class 'header'.
+*/
+.header img{
+    width: 300px;
+}
+
+.header button{
+    width: 100px;
+    float: right;
+}
+
+.chamada p {
+    font-size: 30px;
+}
+
+.chamada button{
+    width: 300px;
+}
+
+.footer button{
+    background-color: purple;
+}
+
+/*
+    Aqui temos o exemplo de duas regras que conflitam (ambas se aplicam ao
+    elemento com id 'botao-contato'). A 1a regra tem prioridade, pois ela
+    é mais específica (já que ela possui duas referências ao elemento, a classe
+    do elemento pai e o id do próprio elemento)
+*/
+
+.footer #botao-contato{
+    background-color: green;
+}
+
+#botao-contato{
+    background-color: yellow;
+}
+
+/*
+    Exemplo de seletor de estado. Essa regra só é aplicada quando o cursor do
+    mouse está sobre o elemento indicado (hover)
+*/
+.footer #botao-contato:hover{
+    background-color: blue;
+}
