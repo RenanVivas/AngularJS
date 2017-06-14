@@ -1,0 +1,51 @@
+body{
+    background-color: #4286f4;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: #df691a;
+}
+
+h2{
+    color: #df691a;
+}
+
+.header{
+    margin-top: 15px;
+}
+
+.header .welcome{
+    font-size: 20px;
+}
+
+.sidebar{
+    color: white;
+}
+
+.sidebar ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.content{
+    background-color: white;
+    min-height: 100vh;
+}
+
+.mobile-header{
+    font-size: 20px;
+
+}
+
+.mobile-header a{
+    margin-right: 10px;
+}
