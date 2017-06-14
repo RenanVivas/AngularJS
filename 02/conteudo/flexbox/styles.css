@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+}
+
+.container-2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quadrado{
+    height: 300px;
+    width: 33%;
+    border: 1px solid white;
+}
+
+.quadrado.azul{
+    background-color: blue;
+}
+
+.quadrado.vermelho{
+    background-color: red;
+}
+
+.quadrado.verde{
+    background-color: green;
+}

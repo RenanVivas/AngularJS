@@ -1,0 +1,44 @@
+button{
+    background-color: red;
+    border:0;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    height: 30px;
+}
+
+/* Header */
+.header img{
+    width: 300px;
+}
+
+.header button{
+    width: 100px;
+    float: right;
+}
+
+/* Chamada */
+.chamada p {
+    font-size: 30px;
+}
+
+.chamada button{
+    width: 300px;
+}
+
+/* Footer */
+.footer button{
+    background-color: purple;
+}
+
+.footer #botao-contato{
+    background-color: green;
+}
+
+.footer #botao-contato:hover{
+    background-color: blue;
+}
+
+#botao-contato{
+    background-color: yellow;
+}
