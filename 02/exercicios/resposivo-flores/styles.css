@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.home{
+    background-image: url('imagens/background.jpg');
+    background-position: -200px -370px;
+    height: 550px;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.home .logo{
+    margin: 0;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    font-family: 'Indie Flower', cursive;
+}
+
+.produtos{
+    width: 100%;
+    display: flex;
+}
+
+.produtos div{
+    text-align: center;
+}
+
+.produtos img{
+    width: 100%;
+}
+
+@media(max-width: 700px) {
+    .home{
+        height: 400px;
+    }
+
+    .produtos{
+        display: block;
+    }
+}
