@@ -1,0 +1,18 @@
+body{
+  font-family: sans-serif;
+}
+
+section button{
+  width: 100%;
+}
+
+section input{
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+  border-color: black;
+}
+
+.feita{
+  text-decoration: line-through;
+}

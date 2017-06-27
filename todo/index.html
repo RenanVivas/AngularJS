@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Todo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body ng-app="todo">
+    <section ng-controller="TodoController">
+      <section ng-controller="TodoController">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <input type="text" ng-model="dados.nome">
+            </div>
+            <div class="col-sm-3">
+              <button class="btn btn-success" ng-click="inserirTarefa()">Inserir</button>
+            </div>
+            <div class="col-sm-3">
+              <button class="btn btn-danger" ng-click="limparTarefa()">Limpar</button>
+            </div>
+          </div>
+
+          <div class="row">
+            <ul>
+              <li ng-repeat="tarefa in tarefas" ng-click="check(tarefa)" ng-class="{'feita': tarefa.estado}">{{tarefa.nome}}</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
